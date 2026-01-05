@@ -5,11 +5,33 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Briefcase, GraduationCap, Calendar } from "lucide-react";
 
+type WorkExperience = {
+  type: "work";
+  title: string;
+  company: string;
+  period: string;
+  description: string[];
+  icon: JSX.Element;
+  color: string;
+};
+
+type Education = {
+  type: "education";
+  degree: string;
+  institution: string;
+  period: string;
+  description: string[];
+  icon: JSX.Element;
+  color: string;
+};
+
+type TimelineItem = WorkExperience | Education;
+
 const Experience = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const experiences = [
+  const experiences: WorkExperience[] = [
     {
       type: "work",
       title: "Front End Web Development Intern",
@@ -40,7 +62,7 @@ const Experience = () => {
     },
   ];
 
-  const education = [
+  const education: Education[] = [
     {
       type: "education",
       degree: "Bachelor of Computer Science",
@@ -57,7 +79,7 @@ const Experience = () => {
     },
   ];
 
-  const allItems = [...experiences, ...education];
+  const allItems: TimelineItem[] = [...experiences, ...education];
 
   return (
     <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-blue-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900" ref={ref}>
