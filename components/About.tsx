@@ -90,12 +90,12 @@ const About = () => {
                   Professional Summary
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  I'm a motivated Computer Science graduate from the University of Mianwali with a strong GPA of 3.01/4.0.
+                  I&apos;m a motivated Computer Science graduate from the University of Mianwali with a strong GPA of 3.01/4.0.
                   I have practical experience in front-end web development and graphic design, combining technical expertise 
                   with creative problem-solving skills.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  I've completed internships at Ezitech Institute (Front-End Web Development) and SuperTech Institute 
+                  I&apos;ve completed internships at Ezitech Institute (Front-End Web Development) and SuperTech Institute 
                   (Graphics Designing), where I gained hands-on experience in HTML, CSS, JavaScript, Bootstrap, Adobe 
                   Illustrator, and Photoshop. My final year project focused on Skin Lesion Detection using Deep Learning, 
                   showcasing my ability to work with cutting-edge technologies.
