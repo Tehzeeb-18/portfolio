@@ -90,7 +90,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind? Let's work together to create something amazing
+            Have a project in mind? Let&apos;s work together to create something amazing
           </p>
         </motion.div>
 
