@@ -77,7 +77,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight px-4"
           >
             M Tehzeeb Hassan
           </motion.h1>
@@ -87,9 +87,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-8"
+            className="mb-8 px-4"
           >
-            <h2 className="text-2xl md:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-2">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-2">
               IT Intern - Web Developer
             </h2>
             <motion.div
@@ -105,40 +105,40 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mb-8"
+            className="mb-8 px-4"
           >
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
               Motivated Computer Science graduate with practical experience in front-end web development and design. 
               Eager to join a dynamic IT team to apply technical skills and develop into a well-rounded IT professional.
             </p>
             
             {/* Quick stats */}
-            <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm md:text-base px-4">
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-md"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-md"
               >
-                <Code2 className="w-5 h-5 text-primary-600" />
+                <Code2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary-600" />
                 <span className="font-medium text-gray-700 dark:text-gray-300">Web Developer</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-md"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-md"
               >
-                <Palette className="w-5 h-5 text-purple-600" />
+                <Palette className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600" />
                 <span className="font-medium text-gray-700 dark:text-gray-300">Graphic Designer</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-md"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-md"
               >
-                <Sparkles className="w-5 h-5 text-pink-600" />
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-pink-600" />
                 <span className="font-medium text-gray-700 dark:text-gray-300">UI/UX Enthusiast</span>
               </motion.div>
             </div>
@@ -149,13 +149,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 px-4"
           >
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 text-white rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl overflow-hidden cursor-pointer"
+              className="group relative w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 text-white rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl overflow-hidden cursor-pointer"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-primary-700 via-purple-700 to-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               <span className="relative">View Projects</span>
@@ -165,7 +165,7 @@ const Hero = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm cursor-pointer"
+              className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl backdrop-blur-sm cursor-pointer text-center"
             >
               Contact Me
             </motion.a>
