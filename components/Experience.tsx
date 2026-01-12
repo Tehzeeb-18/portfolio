@@ -82,21 +82,21 @@ const Experience = () => {
   const allItems: TimelineItem[] = [...experiences, ...education];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-blue-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900" ref={ref}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="py-24 bg-gray-50 dark:bg-gray-900" ref={ref}>
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <p className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 font-medium mb-4">
+            Journey
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
             Experience & Education
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-            My professional journey and academic background
-          </p>
         </motion.div>
 
         {/* Horizontal Timeline */}

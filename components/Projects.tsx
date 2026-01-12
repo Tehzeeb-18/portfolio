@@ -41,21 +41,21 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-blue-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900" ref={ref}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-24 bg-gray-50 dark:bg-gray-900" ref={ref}>
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <p className="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 font-medium mb-4">
+            Portfolio
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
             Featured Projects
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-            A showcase of my recent work in web development and design
-          </p>
         </motion.div>
 
         {/* Projects Grid */}
@@ -66,13 +66,13 @@ const Projects = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.02, y: -5 }}
               className="group relative cursor-pointer"
-              whileHover={{ scale: 1.05 }}
             >
               {/* Gradient Border Effect */}
-              <div className={`absolute -inset-0.5 bg-gradient-to-r ${project.gradient} rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 blur`}></div>
+              <div className={`absolute -inset-0.5 bg-gradient-to-r ${project.gradient} rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 blur`}></div>
               
-              <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+              <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-900 dark:hover:border-white transition-all duration-300">
                 {/* Project Image/Gradient */}
                 <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
                   {project.image && (
@@ -96,7 +96,7 @@ const Projects = () => {
 
                 {/* Project Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary-600 group-hover:to-purple-600 transition-all">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
@@ -108,7 +108,7 @@ const Projects = () => {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 text-primary-700 dark:text-primary-300 rounded-full"
+                        className="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-gray-800"
                       >
                         {tag}
                       </span>
@@ -143,7 +143,7 @@ const Projects = () => {
                 </div>
 
                 {/* Hover Effect Border */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary-500 rounded-xl transition-colors duration-300 pointer-events-none" />
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-gray-900 dark:group-hover:border-white rounded-2xl transition-colors duration-300 pointer-events-none" />
               </div>
             </motion.div>
           ))}
