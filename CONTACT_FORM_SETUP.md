@@ -9,9 +9,13 @@ Your contact form is configured to send emails to **tehzeebh456@gmail.com** usin
 1. Go to: https://web3forms.com/
 2. Click "Get Started for Free"
 3. Enter your email: **tehzeebh456@gmail.com**
-4. Click "Create Access Key"
-5. Check your email and verify
-6. Copy your Access Key (looks like: `a1b2c3d4-e5f6-7890-abcd-ef1234567890`)
+4. When asked "Where do you plan to add this form?":
+   - For testing: Type `localhost`
+   - For production: Type your Vercel URL (e.g., `portfolio-tehzeeb-18s-projects.vercel.app`)
+   - You can add both URLs later in the dashboard
+5. Click "Create Access Key"
+6. Check your email and verify
+7. Copy your Access Key (looks like: `a1b2c3d4-e5f6-7890-abcd-ef1234567890`)
 
 ### 2. Add Access Key to Your Project
 
@@ -28,7 +32,15 @@ git commit -m "Add Web3Forms access key for contact form"
 git push origin main
 ```
 
-### 4. Test It!
+### 4. Add Your Vercel URL (After Deployment)
+
+1. Go to https://web3forms.com/dashboard
+2. Login with your email
+3. Click on your form
+4. Add your Vercel URL to "Allowed Domains"
+5. Save
+
+### 5. Test It!
 
 Once deployed, fill out your contact form and you'll receive an email at **tehzeebh456@gmail.com**!
 
@@ -52,6 +64,7 @@ You'll receive emails with:
 
 - **Not receiving emails?** Check your spam folder
 - **Form not working?** Make sure you replaced the access key
+- **Domain not allowed error?** Add your Vercel URL in Web3Forms dashboard
 - **Need help?** Visit https://web3forms.com/docs
 
 ---
