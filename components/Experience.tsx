@@ -41,7 +41,6 @@ const Experience = () => {
         "Completed a front-end development internship at Ezitech from October 2024 to January 2025",
         "Worked on responsive web design, UI/UX improvements, and performance optimization",
         "Gained experience in HTML, CSS, JavaScript, and Bootstrap for building modern web applications",
-        "Collaborated with team members on real-world projects and client requirements",
       ],
       icon: <Briefcase className="w-5 h-5" />,
       color: "from-blue-500 to-cyan-500",
