@@ -31,6 +31,13 @@ const TechStack = () => {
       description: "Interactive logic"
     },
     { 
+      name: "TypeScript", 
+      category: "Frontend",
+      icon: "📘",
+      gradient: "from-blue-600 to-blue-400",
+      description: "Type-safe JS"
+    },
+    { 
       name: "React", 
       category: "Frontend",
       icon: "⚛️",

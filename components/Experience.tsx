@@ -112,7 +112,7 @@ const Experience = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="relative cursor-pointer"
+                className="relative cursor-pointer h-full"
                 whileHover={{ scale: 1.05 }}
               >
                 {/* Timeline Dot with Pulse */}
@@ -126,13 +126,13 @@ const Experience = () => {
                 </div>
 
                 {/* Content Card with Gradient Border */}
-                <div className="relative group mt-32 md:mt-32">
+                <div className="relative group mt-32 md:mt-32 h-full flex flex-col">
                   {/* Gradient Border Effect */}
                   <div className={`absolute -inset-0.5 bg-gradient-to-r ${item.color} rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 blur`}></div>
                   
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div className="relative bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
                     {/* Icon with Gradient */}
-                    <div className={`inline-flex p-3 rounded-lg bg-gradient-to-br ${item.color} text-white mb-4 shadow-md group-hover:shadow-lg transition-shadow`}>
+                    <div className={`inline-flex p-3 rounded-lg bg-gradient-to-br ${item.color} text-white mb-4 shadow-md group-hover:shadow-lg transition-shadow w-fit`}>
                       {item.icon}
                     </div>
 
@@ -153,7 +153,7 @@ const Experience = () => {
                     </div>
 
                     {/* Description */}
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 flex-grow">
                       {item.description.map((desc, descIndex) => (
                         <li
                           key={descIndex}
