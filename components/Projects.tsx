@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       title: "Cafedine Website",
-      description: "A modern, responsive restaurant website featuring online menu, reservation system, and interactive UI. Built with React and styled with Tailwind CSS for optimal user experience.",
+      description: "A modern, responsive restaurant website featuring online menu, reservation system, and interactive UI with optimal user experience.",
       image: "/projects/cafedine.png",
       tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
       github: "https://github.com/Tehzeeb-18/Cafedine",
@@ -67,12 +67,12 @@ const Projects = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="group relative cursor-pointer"
+              className="group relative cursor-pointer h-full flex flex-col"
             >
               {/* Gradient Border Effect */}
               <div className={`absolute -inset-0.5 bg-gradient-to-r ${project.gradient} rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 blur`}></div>
               
-              <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-900 dark:hover:border-white transition-all duration-300">
+              <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-900 dark:hover:border-white transition-all duration-300 flex flex-col h-full">
                 {/* Project Image/Gradient */}
                 <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
                   {project.image && (
@@ -95,11 +95,11 @@ const Projects = () => {
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">
                     {project.description}
                   </p>
 
