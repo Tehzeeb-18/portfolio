@@ -130,10 +130,11 @@ const Hero = () => {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#contact"
+              href="/resume.pdf"
+              download="M_Tehzeeb_Hassan_CV.pdf"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-gray-900 border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white rounded-full font-medium hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 transition-all duration-300"
             >
-              Get in Touch
+              Download CV
             </a>
           </motion.div>
 
