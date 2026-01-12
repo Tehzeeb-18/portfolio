@@ -27,11 +27,13 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE", // You'll replace this
+          access_key: "5efa9da5-ef82-4b38-b97e-18d7e4e8eac2",
           name: formData.name,
           email: formData.email,
           message: formData.message,
           subject: "New Contact Form Submission from Portfolio",
+          from_name: "Portfolio Contact Form",
+          botcheck: "",
         }),
       });
 
@@ -216,6 +218,9 @@ const Contact = () => {
           >
             <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 via-purple-500 to-pink-500 rounded-2xl opacity-20 group-hover:opacity-30 blur transition duration-300"></div>
             <form onSubmit={handleSubmit} className="relative space-y-6 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl">
+              {/* Honeypot field for spam protection */}
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+              
               <div>
                 <label
                   htmlFor="name"
